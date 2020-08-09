@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to right,rgba(255,154,198,1),rgba(108,144,223)) ;
+}
+.main {
+    padding: 10%;
+}
+
+
+/** HEADER*/
+.header {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: .8rem;
+    padding-bottom: 1rem;
+    font-size: 3em;
+    font-family: 'ABeeZee', sans-serif;
+}
+ @media screen and (max-width: 500px) {
+     .header {
+        font-size: 2em;
+     }
+ }
+
+
+ /*Main Section*/
+ .main-section .row {
+    margin-top: 2%;
+    padding: 2%;
+    background-color: rgb(20, 19, 19,.8);
+ }
+ .left-pic-contain img {
+     display: block;
+     margin: auto;
+     border: 1px solid black;
+     width: 60%;
+     margin-left: 10%;
+ }
+ 
