@@ -7,6 +7,8 @@
         <link href="logo.png" type="image" rel="icon">
         <link rel="stylesheet" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -28,15 +30,42 @@
 
 
             <div class="row ">
-                <div class="col-md-8 col-sm-12 left border align-middle text-center">
+                <div class="col-md-7 col-sm-12 left border">
                     <div class="left-in">Upload Image</div>
                 </div>
-                <div class="col-md-4 col-sm-12 right border">
+                <div class="col-md-5 col-sm-12 right border">
+                    <div class="fix-container">
+                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="slide-container text-center">
+                        <p>Opacity</p>
+                        <input type="range" min="0" max="100" class="slider">
+                    </div>
+                    <div class="slide-container text-center">
+                        <p>Border</p>
+                        <input type="range" min="0" max="100" class="slider">
+                    </div>
+                    <div class="slide-container text-center">
+                        <p>Vingette</p>
+                        <input type="range" min="0" max="100" class="slider">
+                    </div>
+                    <div class="slide-container text-center">
+                        <p>Saturation</p>
+                        <input type="range" min="0" max="100" class="slider">
+                    </div>
+                    <div class="slide-container text-center">
+                        <p>Contrast</p>
+                        <input type="range" min="0" max="100" class="slider">
+                    </div>
+                    <div class="slide-container text-center">
+                        <p>Crop</p>
+                        <input type="range" min="0" max="100" class="slider">
+                    </div>
                 </div>
             </div>
 
 
-            <div class=" down text-center w-75">
+            <div class="down text-center w-75">
                 <button type="button" class="btn btn-info btn-lg">Reset</button>
                 <button type="button" class="btn btn-info btn-lg">Download</button>
             </div>

@@ -24,23 +24,27 @@ body {
 
 
  /*Main Section*/
- 
  .main .row {
      padding: 2%;
      height: 400px;
-     line-height: 400px;
-     box-sizing: border-box;
  }
-.left {
-    height: 400px;
-    line-height: 400px;
-}
-.left-in {
-    line-height: 1.5;
-    display: inline-block;
-}
+ .right {
+     padding: 3%;
+     height: 400px;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     position: relative;
+ }
+ .right::-webkit-scrollbar {
+     display: none;
+ }
+ .fix-container {
+ position: absolute;
+ bottom: 10px;
+ right: 8px;
+ }
  .down {
-     margin: 4% auto 2% auto;
+     margin: 2% auto 2% auto;
      padding: 1%;
  }
  .down .btn {
@@ -49,7 +53,7 @@ body {
      width: 25%;
  }
  @media screen and (max-width: 600px) {
-    .left-down .btn {
+    .down .btn {
         width: 90%;
     }
 }
