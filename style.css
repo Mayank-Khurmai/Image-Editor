@@ -48,6 +48,10 @@ body {
      background-size: cover;
      transform: translate(-50%,-50%);
  }
+#up-img{
+    display: none;
+}
+
  .right {
      padding: 3%;
      height: 400px;
