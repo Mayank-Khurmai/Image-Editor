@@ -1,14 +1,16 @@
-* {
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body {
+
+body{
     background-image: linear-gradient(to right,rgba(255,154,198,1),rgba(108,144,223)) ;
 }
 
 /** HEADER*/
-.header {
+
+.header{
     text-align: center;
     border-bottom: 1px solid black;
     padding-top: .8rem;
@@ -16,7 +18,8 @@ body {
     font-size: 3em;
     font-family: 'ABeeZee', sans-serif;
 }
- @media screen and (max-width: 500px) {
+
+@media screen and (max-width: 500px) {
      .header {
         font-size: 2em;
      }
@@ -28,17 +31,20 @@ body {
      padding: 2%;
      height: 400px;
  }
+
  .left {
      position: relative;
      cursor: pointer;
      height: 400px;
      border-right: 1px solid  rgba(107, 105, 105, 0.7);
  }
+
 .left:hover {
     font-style: italic;
     background-color: rgba(153, 146, 146, .7);
 }
- .left-in {
+
+.left-in {
      position: absolute;
      width: 256px;
      height: 256px;
@@ -47,80 +53,93 @@ body {
      background-image: url(upload.png);
      background-size: cover;
      transform: translate(-50%,-50%);
- }
+}
+
 #up-img{
     display: none;
 }
 
- .right {
-     padding: 3%;
-     height: 400px;
-     overflow-y: scroll;
-     overflow-x: hidden;
-     position: relative;
- }
- .right::-webkit-scrollbar {
-     display: none;
- }
- .fix-container {
- position: absolute;
- bottom: 10px;
- right: 10px;
- }
- .fix-container p {
-     font-size: smaller;
-     margin: 0;
-     padding: 0;
- }
- .fix-container i {
-     display: block;
-     width: 10%;
-     margin: auto;
- }
- .down {
-     margin: 2% auto 2% auto;
-     padding: 1%;
- }
- .down .btn {
-     margin: 5px 10px;
-     border-radius: 9px;
-     width: 25%;
- }
- @media screen and (max-width: 767px) {
-     .main .row {
-         height: 250px;
-     }
-     .left {
-         font-size: xx-small;
-         height: 250px;
-     }
-     .left-in {
-         width: 40%;
-         font-size: xx-small;
-         left: 20%;
-     }
-     .right {
-         font-size: x-small;
-         height: 250px;
-     }
- }
- @media screen and (max-width: 600px) {
+.right {
+    padding: 3%;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.right::-webkit-scrollbar {
+    display: none;
+}
+
+.fix-container{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.fix-container p {
+    font-size: smaller;
+    margin: 0;
+    padding: 0;
+}
+
+.fix-container i {
+    display: block;
+    width: 10%;
+    margin: auto;
+}
+
+.down {
+    margin: 2% auto 2% auto;
+    padding: 1%;
+}
+
+.down .btn {
+    margin: 5px 10px;
+    border-radius: 9px;
+    width: 25%;
+}
+
+@media screen and (max-width: 767px) {
+    .main .row {
+        height: 250px;
+    }
+    .left {
+        font-size: xx-small;
+        height: 250px;
+    }
+    .left-in {
+        width: 40%;
+        font-size: xx-small;
+        left: 20%;
+    }
+    .right {
+        font-size: x-small;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .down .btn {
         width: 90%;
     }
 }
 
- /*FOOTER*/
- footer p {
-     border-top: 1px solid rgb(99, 111, 111);
-     padding-top: .8rem;
- }
- footer .lead {
-     font-weight: 600;
-     font-size: 1.5em;
- }
- @media screen and (max-width: 500px) {
-     footer .lead {
-        font-size: 1em;
-     }
- }
+/*FOOTER*/
+
+
+footer p {
+    border-top: 1px solid rgb(99, 111, 111);
+    padding-top: .8rem;
+}
+
+footer .lead {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 500px) {
+    footer .lead {
+    font-size: 1em;
+    }
+}
