@@ -34,7 +34,6 @@ body{
 
  .left {
      position: relative;
-     cursor: pointer;
      height: 400px;
      border-right: 1px solid  rgba(107, 105, 105, 0.7);
  }
@@ -53,6 +52,10 @@ body{
      background-image: url(upload.png);
      background-size: cover;
      transform: translate(-50%,-50%);
+}
+
+.left-in:hover{
+    cursor: pointer;
 }
 
 #up-img{

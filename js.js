@@ -13,3 +13,7 @@ function preview(){
 function upload(){
     document.getElementById("up-img").click();
 }
+
+document.getElementById("reset").onclick= function(){
+    location.reload();
+}
