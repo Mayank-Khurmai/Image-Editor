@@ -1,19 +1,15 @@
 function preview(){
+    var input = document.getElementById("up-img");
     var freader = new FileReader();
-    console.log(input);
-    // freader.readAsDataURL(input.files[0]);
-    
-    // freader.onloadend = function(event){
-    //         prdiv.innerHTML="hello";
-            
-    //     }
+    freader.readAsDataURL(input.files[0]);
+    freader.onloadend = function(event){
+               var prdiv = document.getElementById("preview-div");
+               prdiv.innerHTML="";
+               prdiv.style.background = "url("+event.target.result+")";
+               prdiv.style.backgroundSize = "cover";
+           }
 }
 
 function upload(){
-    var input = document.getElementById("up-img");
-    input.click();
-
-    var prdiv = document.getElementById("preview-div");
-    prdiv.innerHTML="";
-    preview();
+    document.getElementById("up-img").click();
 }
