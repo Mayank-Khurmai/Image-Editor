@@ -40,9 +40,12 @@ body {
 }
  .left-in {
      position: absolute;
-     width: 370px;
+     width: 256px;
+     height: 256px;
      top: 50%;
      left: 50%;
+     background-image: url(upload.png);
+     background-size: cover;
      transform: translate(-50%,-50%);
  }
  .right {
