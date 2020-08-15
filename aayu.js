@@ -58,3 +58,70 @@ function myBlur() {
     prdiv.style.filter = "blur("+y+"px)";
     }
 }
+function myBrightness() {
+    if (flag == 1)
+    {
+    var y = document.getElementById("brightness").value;
+    prdiv.style.filter = "brightness("+y+"%)";
+    }
+}
+function myContrast() {
+    if (flag == 1)
+    {
+    var y = document.getElementById("contrast").value;
+    prdiv.style.filter = "contrast("+y+"%)";
+    }
+}
+function mySepia() {
+    if (flag == 1)
+    {
+    var y = document.getElementById("sepia").value;
+    prdiv.style.filter = "sepia("+y+"%)";
+    }
+}
+function myHuerotate() {
+    if (flag == 1)
+    {
+    var y = document.getElementById("huerotate").value;
+    prdiv.style.filter = "hue-rotate("+y+"deg)";
+    }
+}
+function myDropshadow() {
+    if (flag == 1)
+    {
+    var y = document.getElementById("dropshadow").value;
+    y *= 0.05;
+    prdiv.style.filter = `drop-shadow(${y}px ${y}px)`;
+    }
+}
+
+function download(file, input) { 
+              
+    //creating an invisible element 
+    var element = document.createElement('a'); 
+    element.setAttribute('href',  
+    'data:text/plain;charset=utf-8, ' 
+    + encodeURIComponent(input)); 
+    element.setAttribute('download', file); 
+  
+    // Above code is equivalent to 
+    // <a href="path of file" download="file name"> 
+  
+    document.body.appendChild(element); 
+  
+    //onClick property 
+    element.click(); 
+  
+    document.body.removeChild(element); 
+} 
+  
+// Start file download. 
+document.getElementById("dn") 
+.addEventListener("click", function() { 
+    // Generate download of hello.txt  
+    // file with some content 
+    var _img = document.getElementById("up-img").files[0]; 
+    var filename = "GFG.jpg"; 
+  
+    download(filename, input); 
+}, false); 

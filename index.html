@@ -32,7 +32,7 @@
         <div class="container-fluid main">
             <div class="row">
                 
-                <div class="col-6 left-full">
+                <div class="col-md-6 left-full">
                     <div class="col-12 left" id="preview-div"> 
                         <input type="file" id="up-img" accept="image/*" onchange="preview()">
                         <div class="left-in" onclick="upload()">
@@ -42,7 +42,7 @@
                 </div>
 
 
-                <div class="col-6 right">
+                <div class="col-md-6 right">
                     <div class="fix-container">
                         <i class="fa fa-angle-double-down" aria-hidden="true"></i>
                     </div>
@@ -70,14 +70,38 @@
                         <p>Blur</p>
                         <input type="range" min="0" max="100" class="slider" id="blur" onchange="myBlur()">
                     </div>
+                    <div class="slide-container text-center">
+                        <p>Brightness</p>
+                        <input type="range" min="0" max="100" class="slider" id="brightness" onchange="myBrightness()">
+                    </div>
+                    <div class="slide-container text-center">
+                        <p>Contrast</p>
+                        <input type="range" min="0" max="100" class="slider" id="contrast" onchange="myContrast()">
+                    </div>
+                    <div class="slide-container text-center">
+                        <p>Sepia</p>
+                        <input type="range" min="0" max="100" class="slider" id="sepia" onchange="mySepia()">
+                    </div>
+                    <div class="slide-container text-center">
+                        <p>Hue-Rotate</p>
+                        <input type="range" min="0" max="100" class="slider" id="huerotate" onchange="myHuerotate()">
+                    </div>
+                    <div class="slide-container text-center">
+                        <p>Drop-Shadow</p>
+                        <input type="range" min="0" max="100" class="slider" id="dropshadow" onchange="myDropshadow()">
+                    </div>
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
 
-            <!--Buttons Section-->
+        <!--Buttons Section-->
+        <div class="container-fluid">
+            <div class="row">
             <div class="down text-center w-75">
                 <button type="button" class="btn btn-info btn-md-lg" onclick="load()">Reset</button>
-                <button type="button" class="btn btn-info btn-md-lg" onclick="dwnd()">Download</button>
+                <button type="button" class="btn btn-info btn-md-lg dn" onclick="download()">Download</button>
             </div>
         </div>
         </div>
