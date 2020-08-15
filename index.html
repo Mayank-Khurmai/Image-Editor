@@ -14,64 +14,70 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body style="background-color: rgba(9, 74, 82, 0.099);">
+
         <!--Header-->
+        <header>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-12">
-                    <h1 class="header">.Photo Editor.</h1>
+                    <h1 class="header-content">Photo Editor</h1>
                 </div>
             </div>
         </div>
+        </header>
 
         <!--Main Section-->
         <div class="main-section">
         <div class="container-fluid main">
-
-
-            <div class="row ">
-                <div class="col-6 left border" id="preview-div">
-                    <input type="file" accept="image/*" id="up-img" onchange="preview()">
-                    <div class="left-in" onclick="upload()">
+            <div class="row">
+                
+                <div class="col-6 left-full">
+                    <div class="col-12 left" id="preview-div"> 
+                        <input type="file" id="up-img" accept="image/*" onchange="preview()">
+                        <div class="left-in" onclick="upload()">
                        
+                        </div>
                     </div>
                 </div>
+
+
                 <div class="col-6 right">
                     <div class="fix-container">
-                        <p>Scroll</p>
                         <i class="fa fa-angle-double-down" aria-hidden="true"></i>
                     </div>
+                    <div class="right-heading text-center sticky-top">
+                        <h4>Effects</h4>
+                    </div>
+                    <div class="right-down">
                     <div class="slide-container text-center">
                         <p>Opacity</p>
-                        <input type="range" min="0" max="100" class="slider" id="opacity" onchange="opacity()">
+                        <input type="range" min="0" max="100" class="slider" id="opacity" onchange="myOpacity()">
                     </div>
                     <div class="slide-container text-center">
-                        <p>Grayscale</p>
-                        <input type="range" min="0" max="100" class="slider" id="grayscale" onchange="grayscale()">
+                        <p>Greyscale</p>
+                        <input type="range" min="0" max="100" class="slider" id="greyscale" onchange="myGreyscale()">
                     </div>
                     <div class="slide-container text-center">
-                        <p>Vingette</p>
-                        <input type="range" min="0" max="100" class="slider">
+                        <p>Invert</p>
+                        <input type="range" min="0" max="100" class="slider" id="invert" onchange="myInvert()">
                     </div>
                     <div class="slide-container text-center">
                         <p>Saturation</p>
-                        <input type="range" min="0" max="100" class="slider">
+                        <input type="range" min="0" max="100" class="slider" id="saturate" onchange="mySaturate()">
                     </div>
                     <div class="slide-container text-center">
-                        <p>Contrast</p>
-                        <input type="range" min="0" max="100" class="slider">
+                        <p>Blur</p>
+                        <input type="range" min="0" max="100" class="slider" id="blur" onchange="myBlur()">
                     </div>
-                    <div class="slide-container text-center">
-                        <p>Crop</p>
-                        <input type="range" min="0" max="100" class="slider">
                     </div>
                 </div>
             </div>
 
-
+            <!--Buttons Section-->
             <div class="down text-center w-75">
-                <button type="button" class="btn btn-info btn-lg" id="reset">Reset</button>
-                <button type="button" class="btn btn-info btn-lg">Download</button>
+                <button type="button" class="btn btn-info btn-md-lg" onclick="load()">Reset</button>
+                <button type="button" class="btn btn-info btn-md-lg" onclick="dwnd()">Download</button>
             </div>
         </div>
         </div>
@@ -80,13 +86,14 @@
         <!--FOOTER-->
         <footer>
             <div class="container-fluid">
-                <div class="row foot">
+                <div class="row">
                     <div class="col-12 text-center">
                         <p class="lead">Developed By: <i>Aayushi Sharma</i></p>
                     </div>
                 </div>
             </div>
         </footer>
-        <script src="js.js"></script>
+        <script src="aayu.js"></script>
+
     </body>
 </html>
