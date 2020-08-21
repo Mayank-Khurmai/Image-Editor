@@ -27,7 +27,7 @@ function grayscale(){
 
 function gray(){
     var x = document.getElementById("grayscale").value;
-    prdiv.style.filter = "grayscale("+x+"%)";
+    
 }
 
 document.getElementById("reset").onclick= function(){
