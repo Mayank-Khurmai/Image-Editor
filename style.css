@@ -1,11 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /** HEADER*/
-
 header {
     background-color: rgba(9, 74, 82, 0.917);
     border-radius: 9px;
