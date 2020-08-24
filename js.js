@@ -25,10 +25,10 @@ function grayscale(){
     prdiv.style.filter = "grayscale("+x+"%)";
 }
 
-function gray(){
-    var x = document.getElementById("grayscale").value;
+// function gray(){
+//     var x = document.getElementById("grayscale").value;
     
-}
+// }
 
 document.getElementById("reset").onclick= function(){
     location.reload();
